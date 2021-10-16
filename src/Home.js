@@ -3,6 +3,7 @@ import Carousel from "./Carousel";
 import BooksCollection from "./BooksCollection";
 import Novels from "./Novels";
 import Subjects from "./Subjects";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -24,6 +25,12 @@ function Home() {
 
       {/* Recommended Books Section */}
       <BooksCollection title="Recommended NEET Books" />
+
+      {/* Extra Space */}
+      <div className="mb-24"></div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

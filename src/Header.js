@@ -3,7 +3,6 @@ import { FiShoppingCart as ShoppingCart } from "react-icons/fi";
 import { GiHamburgerMenu as MenuIcon } from "react-icons/gi/";
 import { BiSearchAlt2 as SearchIcon } from "react-icons/bi/";
 import IconButton from "@mui/material/IconButton";
-import FlashOnIcon from "@material-ui/icons/FlashOn";
 
 function Header() {
   return (
