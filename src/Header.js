@@ -2,11 +2,13 @@ import React from "react";
 import { FiShoppingCart as ShoppingCart } from "react-icons/fi";
 import { GiHamburgerMenu as MenuIcon } from "react-icons/gi/";
 import { BiSearchAlt2 as SearchIcon } from "react-icons/bi/";
+import IconButton from "@mui/material/IconButton";
+import FlashOnIcon from "@material-ui/icons/FlashOn";
 
 function Header() {
   return (
-    <div className="flex flex-col p-4">
-      <div className="flex flex-row justify-between">
+    <div className="flex flex-col p-4 sticky top-0 z-10 bg-white">
+      <div className="flex flex-row justify-between items-center">
         {/* Burger Icon */}
         <MenuIcon size="1.5rem" />
 
@@ -18,7 +20,11 @@ function Header() {
         />
 
         {/* Shopping Basket */}
-        <ShoppingCart size="1.5rem" />
+        <div className="bg-gray-100 rounded-full">
+          <IconButton>
+            <ShoppingCart size="0.9rem" />
+          </IconButton>
+        </div>
       </div>
       <div className="flex flex-row bg-gray-200 h-10 items-center p-2 rounded-xl mt-4">
         <SearchIcon size="1.5rem" className="text-gray-500" />
