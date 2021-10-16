@@ -1,8 +1,18 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom/";
+import Header from "./Header";
 
 function App() {
   return (
-    <h1 className="text-4xl font-bold">Hello World</h1>
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/">
+            <Header />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
