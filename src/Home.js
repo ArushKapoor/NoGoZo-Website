@@ -1,12 +1,16 @@
 import React from "react";
 import Carousel from "./Carousel";
+import Subjects from "./Subjects";
 
 function Home() {
   return (
     <div className="flex flex-col">
       {/* Caraousel */}
       <Carousel />
-      {/* Class Card */}
+
+      {/* Subjects Card */}
+      <Subjects />
+
       {/* Novels Carasouel */}
       {/* Items Caraousel */}
     </div>
