@@ -1,10 +1,10 @@
 import React from "react";
 import BookItem from "./BookItem";
 
-function LatestNovels() {
+function BooksCollection({ title }) {
   return (
     <div>
-      <span className="ml-4">Latest Novels Arrival</span>
+      <span className="ml-4">{title}</span>
       <div className="flex overflow-x-auto scrollbar-hide">
         <span className="ml-4"></span>
         {Array(10)
@@ -23,4 +23,4 @@ function LatestNovels() {
   );
 }
 
-export default LatestNovels;
+export default BooksCollection;
