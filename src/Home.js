@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
+import LatestNovels from "./LatestNovels";
 import Novels from "./Novels";
 import Subjects from "./Subjects";
 
@@ -12,10 +13,11 @@ function Home() {
       {/* Subjects Card */}
       <Subjects />
 
-      {/* Novels Carasouel */}
+      {/* Novels Card */}
       <Novels />
 
-      {/* Items Caraousel */}
+      {/* Latest Novels Card */}
+      <LatestNovels />
     </div>
   );
 }
