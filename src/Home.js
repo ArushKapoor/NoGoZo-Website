@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
+import Novels from "./Novels";
 import Subjects from "./Subjects";
 
 function Home() {
@@ -12,6 +13,8 @@ function Home() {
       <Subjects />
 
       {/* Novels Carasouel */}
+      <Novels />
+
       {/* Items Caraousel */}
     </div>
   );
