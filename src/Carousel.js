@@ -52,7 +52,6 @@ function Carousel() {
         {Array(4)
           .fill()
           .map((_, currIndex) => {
-            console.log(currIndex + " " + mod(index, 4));
             return (
               <div
                 className={`mx-1 w-3 h-3 rounded-full cursor-pointer ${

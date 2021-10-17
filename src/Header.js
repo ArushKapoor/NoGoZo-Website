@@ -1,10 +1,12 @@
 import React from "react";
 import HeaderMobile from "./HeaderMobile";
 import HeaderDesktop from "./HeaderDesktop";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ isModalOpen }] = useStateValue();
   return (
-    <div>
+    <div className={`${isModalOpen ? "overflow-hidden" : "sticky top-0 z-10"}`}>
       <HeaderMobile />
       <HeaderDesktop />
     </div>
