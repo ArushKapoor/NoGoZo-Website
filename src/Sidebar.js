@@ -14,30 +14,25 @@ import { AiFillLike as ShareIcon } from "react-icons/ai/";
 
 function Sidebar() {
   return (
-    <div
-      className="flex flex-col fixed w-full z-50 top-0 left-0 h-full"
-      style={{ backgroundColor: "rgba(0,0,0,0.6)" }}
-    >
-      <div className="bg-white w-80 h-full">
-        {/* Image Logo */}
-        <img
-          className="object-contain w-full"
-          src="https://nogozo.com/static/mainapp/img/logo.png"
-          alt="logo"
-        />
-        <hr className="bg-black my-6" />
-        <SidebarIcon icon={ProfileIcon} name="Profile" />
-        <SidebarIcon icon={LocationOnIcon} name="Address" />
-        <SidebarIcon icon={OrdersIcon} name="Orderss" />
-        <hr className="bg-black my-6" />
-        <SidebarIcon icon={CouponsIcon} name="Coupons" />
-        <SidebarIcon icon={FavouritesIcon} name="Favourites" />
-        <hr className="bg-black my-6" />
-        <SidebarIcon icon={ShareIcon} name="Share App" />
-        <SidebarIcon icon={HelpIcon} name="Help" />
-        <SidebarIcon icon={BugIcon} name="Report an issue" />
-        <SidebarIcon icon={RateIcon} name="Rate App" />
-      </div>
+    <div className="bg-white w-80 h-full">
+      {/* Image Logo */}
+      <img
+        className="object-contain w-full"
+        src="https://nogozo.com/static/mainapp/img/logo.png"
+        alt="logo"
+      />
+      <hr className="bg-black my-6" />
+      <SidebarIcon icon={ProfileIcon} name="Profile" />
+      <SidebarIcon icon={LocationOnIcon} name="Address" />
+      <SidebarIcon icon={OrdersIcon} name="Orderss" />
+      <hr className="bg-black my-6" />
+      <SidebarIcon icon={CouponsIcon} name="Coupons" />
+      <SidebarIcon icon={FavouritesIcon} name="Favourites" />
+      <hr className="bg-black my-6" />
+      <SidebarIcon icon={ShareIcon} name="Share App" />
+      <SidebarIcon icon={HelpIcon} name="Help" />
+      <SidebarIcon icon={BugIcon} name="Report an issue" />
+      <SidebarIcon icon={RateIcon} name="Rate App" />
     </div>
   );
 }
