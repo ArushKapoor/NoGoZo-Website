@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderMobile from "./HeaderMobile";
 import HeaderDesktop from "./HeaderDesktop";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../react-context-api/StateProvider";
 
 function Header() {
   const [{ isModalOpen }] = useStateValue();

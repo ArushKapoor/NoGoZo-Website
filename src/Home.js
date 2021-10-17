@@ -1,8 +1,8 @@
 import React from "react";
-import Carousel from "./Carousel";
-import BooksCollection from "./BooksCollection";
-import Novels from "./Novels";
-import Subjects from "./Subjects";
+import Carousel from "./components/carousel/Carousel";
+import BooksCollection from "./components/collection/BooksCollection";
+import Novels from "./components/collection/Novels";
+import Subjects from "./components/subject/Subjects";
 import Footer from "./Footer";
 
 function Home() {

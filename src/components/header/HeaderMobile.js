@@ -6,7 +6,7 @@ import Modal from "react-modal";
 import Searchbar from "./Searchbar";
 import HeaderLogo from "./HeaderLogo";
 import ShoppingIcon from "./ShoppingIcon";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../react-context-api/StateProvider";
 
 function HeaderMobile() {
   const [{ isModalOpen }, dispatch] = useStateValue();
