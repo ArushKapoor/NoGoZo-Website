@@ -24,7 +24,7 @@ function Sidebar() {
       <hr className="bg-black my-6" />
       <SidebarIcon icon={ProfileIcon} name="Profile" />
       <SidebarIcon icon={LocationOnIcon} name="Address" />
-      <SidebarIcon icon={OrdersIcon} name="Orderss" />
+      <SidebarIcon icon={OrdersIcon} name="Orders" />
       <hr className="bg-black my-6" />
       <SidebarIcon icon={CouponsIcon} name="Coupons" />
       <SidebarIcon icon={FavouritesIcon} name="Favourites" />
