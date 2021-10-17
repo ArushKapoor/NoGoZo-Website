@@ -3,13 +3,16 @@ import { FiShoppingCart as ShoppingCart } from "react-icons/fi";
 import { GiHamburgerMenu as MenuIcon } from "react-icons/gi/";
 import { BiSearchAlt2 as SearchIcon } from "react-icons/bi/";
 import IconButton from "@mui/material/IconButton";
+import Sidebar from "./Sidebar";
 
 function Header() {
   return (
     <div className="flex flex-col p-4 sticky top-0 z-10 bg-white">
       <div className="flex flex-row justify-between items-center">
         {/* Burger Icon */}
-        <MenuIcon size="1.5rem" />
+        <IconButton>
+          <MenuIcon size="1.5rem" />
+        </IconButton>
 
         {/* Image Logo */}
         <img
@@ -21,7 +24,7 @@ function Header() {
         {/* Shopping Basket */}
         <div className="bg-gray-100 rounded-full">
           <IconButton>
-            <ShoppingCart size="0.9rem" />
+            <ShoppingCart size="1.1rem" />
           </IconButton>
         </div>
       </div>
@@ -33,6 +36,7 @@ function Header() {
           placeholder="Search product"
         />
       </div>
+      <Sidebar />
     </div>
   );
 }
