@@ -1,12 +1,13 @@
 import React from "react";
 import BookItem from "./BookItem";
+import Heading from "./Heading";
 
 function BooksCollection({ title }) {
   return (
     <div>
-      <span className="ml-4">{title}</span>
+      <Heading title={title} />
       <div className="flex overflow-x-auto scrollbar-hide">
-        <span className="ml-4"></span>
+        <span className="ml-4 md:ml-6"></span>
         {Array(10)
           .fill()
           .map((_) => (

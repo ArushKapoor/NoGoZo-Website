@@ -1,12 +1,13 @@
 import React from "react";
+import Heading from "./Heading";
 import NovelItem from "./NovelItem";
 
 function Novels() {
   return (
     <div>
-      <h1 className="mx-4">Novels for you</h1>
-      <div className="flex flex-row overflow-x-auto scrollbar-hide">
-        <span className="ml-4"></span>
+      <Heading title="Novels for you" />
+      <div className="flex flex-row overflow-x-auto scrollbar-hide md:my-4">
+        <span className="ml-4 md:ml-6"></span>
         {Array(5)
           .fill()
           .map((_) => (

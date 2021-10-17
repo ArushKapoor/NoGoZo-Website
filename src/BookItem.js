@@ -2,8 +2,8 @@ import React from "react";
 
 function BookItem({ imgUrl, name, originalPrice, newPrice, discount }) {
   return (
-    <div className="flex flex-col items-start my-4 mr-4">
-      <div className="py-4 px-8 bg-gray-100 rounded-xl w-32">
+    <div className="flex flex-col items-start my-4 md:my-6 mr-4 md:mr-6">
+      <div className="py-4 md:py-6 px-8 bg-gray-100 rounded-xl w-32 md:w-44">
         <img className="object-contain" src={imgUrl} alt={name} />
       </div>
       <span className="my-2">{name}</span>

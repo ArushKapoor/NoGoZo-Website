@@ -11,7 +11,7 @@ import {
 
 function Footer() {
   return (
-    <div className="flex justify-around bg-white p-4 fixed bottom-0 w-full">
+    <div className="flex justify-around bg-white p-4 fixed bottom-0 w-full md:hidden">
       <HomeIcon className="text-3xl text-blue-400" />
       <HeartIcon className="text-3xl text-gray-400" />
       <BookmarkIcon className="text-3xl text-gray-400" />

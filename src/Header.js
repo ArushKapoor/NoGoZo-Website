@@ -11,8 +11,7 @@ function Header() {
   Modal.setAppElement("#root");
 
   return (
-    // <div className="flex flex-col p-4 sticky top-0 z-10 bg-white">
-    <div className="flex flex-col p-4 bg-white">
+    <div className="flex flex-col p-4 sticky top-0 z-10 bg-white">
       <div className="flex flex-row justify-between items-center">
         {/* Burger Icon */}
         <IconButton onClick={() => setModalIsOpen(true)}>
