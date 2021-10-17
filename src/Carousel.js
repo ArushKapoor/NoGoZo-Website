@@ -28,7 +28,7 @@ function Carousel() {
   function slideRenderer(params) {
     const { index, key } = params;
 
-    const pos = mod(index, 3);
+    const pos = mod(index, 4);
 
     return <CarouselItem key={key} imgUrl={images[pos]} />;
   }
@@ -38,7 +38,7 @@ function Carousel() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col">
       <VirtualizeSwipeableViews
         style={styles.root}
         slideStyle={styles.slideContainer}
@@ -46,6 +46,23 @@ function Carousel() {
         index={index}
         onChangeIndex={handleChangeIndex}
       ></VirtualizeSwipeableViews>
+
+      {/* Pagination */}
+      <div className="flex self-center mt-4">
+        {Array(4)
+          .fill()
+          .map((_, currIndex) => {
+            console.log(currIndex + " " + mod(index, 4));
+            return (
+              <div
+                className={`mx-1 w-3 h-3 rounded-full cursor-pointer ${
+                  currIndex === mod(index, 4) ? "bg-blue-400" : "bg-gray-200"
+                }`}
+                onClick={() => handleChangeIndex(currIndex)}
+              ></div>
+            );
+          })}
+      </div>
     </div>
   );
 }
